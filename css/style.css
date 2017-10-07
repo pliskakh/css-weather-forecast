@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	transition: all .1s ease-in;
+}
+
+body{
+	margin: 0;
+	border: 20px solid #2676A2;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;	
+	background-color: #2C8EC5;
+	color: #F9F9F9;
+	min-height: 100vh;
+	min-width: 100vh;
+}
+
+.ba-header,
+.ba-footer {
+	margin: 0;
+	padding: 20px 0;
+}
+
+.ba-header wi {
+	font-size: 25px;
+}
+
+.ba-container {
+	margin: 0 auto;
+	width: 70%;
+	min-width: 800px;
+	padding: 0 20px;
+}
+
+.ba-header .ba-header__title {
+	margin: 0;
+}
+
+.ba-main .ba-main__title {
+	margin: 0 0 15px 0;
+	font-size: 25px;
+}
+
+.ba-cities-list {
+	padding-left: 0;
+	list-style: none;
+	font-size: 0;
+	border: 3px solid white;
+	background-color: white;
+}
+
+.ba-cities-list .city {
+	display: inline-block;
+	font-size: 18px;
+	width: 25%;
+	text-align: center;
+	border: 3px solid white;
+	padding: 20px 0;
+}
+
+.ba-cities-list:hover .city:not(:hover){
+	opacity: .5;
+}
+
+.city-temperature {
+	margin: 0;
+	font-size: 30px;
+	display: inline-block;
+	opacity: .5;
+	vertical-align: middle;
+}	
+
+.city-temperature + .wi {
+	vertical-align: middle;
+	font-size: 40px;
+	opacity: .5;
+}
+
+.ba-cities-list .city-lisbon {
+	width: 50%;
+	background-color: #2C8EC5;
+}
+
+.ba-cities-list .city-paris {
+	background-color: #2DC5C5;
+}
+
+.ba-cities-list .city-belgrade {
+	background-color: #8E5B8E;
+}
+
+.ba-cities-list .city-moscow {
+	background-color: #BA3E3E;
+}
+.ba-cities-list .city-telaviv {
+	background-color: #DE5C41;
+}
+
+.ba-cities-list .city-cair {
+	background-color: #FFC55B;
+}
+
+.ba-cities-list .city-ny {
+	background-color: #8EC58E;
+}
+
+.ba-cities-list .city-newdelhi {
+	background-color: #5B8E8E;
+}
+
+.ba-cities-list .city-sf {
+	width: 50%;
+	background-color: #C55B8E;
+}
+
+.ba-cities-list .city-tokyo {
+	background-color: #2D8E5B;
+}
+
+.ba-cities-list .city-sydney {
+	width: 100%;
+	background-color: #5B5B8E;
+}
+
+.ba-cities-list .city-temperature:after {
+	content: "°C"
+}
+
+.ba-footer > p {
+	margin: 0;	
+	opacity: 0.5;
+}
